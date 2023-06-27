@@ -1,0 +1,226 @@
+@media screen and (max-width: 1175px) {
+    .main_wrapper {
+        padding: 80px 94px 100px 94px;
+
+    }
+
+    #Freddie {
+        display: none;
+    }
+
+    #Scarlet {
+        display: none;
+    }
+
+    .footer_wrapper {
+        padding: 30px 30px 0 30px;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*header---------------------------------*/
+     .menu, .active_menu {
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+        height: 30px;
+        justify-content: space-between;
+        outline: none;
+        position: relative;
+        cursor: pointer;
+        z-index: 5;
+        transition: all 0.3s ease 0s;
+
+
+    }
+
+    .menu_mobile_line {
+        width: 100%;
+        height: 2px;
+        background-color: #f1cdb3;
+
+    }
+
+    .active_menu {
+        transform: rotate(90deg);
+    }
+
+    /* стили для шторки меню---------*/
+    .nav, .active {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 320px;
+        height: 100%;
+        background-color: #292929;;
+        padding: 248px 39px 38px 30px;
+        transition: all 0.3s ease 0s;
+        z-index: 5;
+            }
+
+    .active {
+        position: fixed;
+        top: 0;
+        right: 0;
+        overflow: auto;
+
+    }
+
+    .nav, .active ::after {
+        width: 320px;
+        height: 100%;
+        background-color: #292929;;
+        padding: 248px 39px 38px 30px;
+        position: absolute;
+        transition: all 0.3s ease 0s;
+    }
+
+
+    .nav .header_list {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .header_list li {
+        margin-bottom: 40px;
+        padding-right: 0 !important;
+
+    }
+
+    .header_list li:last-child {
+        margin: 0;
+    }
+
+    .header_list a {
+        font-family: 'Arial', sans-serif;
+        color: #FAFAFA;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 160%;
+    }
+
+    /*footer--------------------*/
+    .footer_wrapper {
+        padding: 30px 30px 0 30px;
+    }
+
+    .footer_container {
+        flex-direction: column;
+    }
+
+    .contacts {
+        margin: 0 30px 60px 34px;
+    }
+
+    .locations {
+        margin: 0 30px 60px 34px;
+    }
+
+    .footer_img {
+        margin-left: 204px;
+    }
+
+    .footer_container_content h5 {
+        margin-bottom: 20px;
+    }
+
+    .footer_container_content p {
+        margin-bottom: 15px;
+
+    }
+}
+
+/*@media screen and (max-width: 735px) {*/
+/*    .nav {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .menu {*/
+/*        display: block;*/
+/*        margin-right: -15px;*/
+/*    }*/
+
+/*    .pets {*/
+/*        justify-content: center;*/
+/*    }*/
+
+/*    #Sophia, #Timmy, #Charly {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+@media screen and (max-width: 650px) {
+    .footer_container_content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        text-align: center;
+    }
+
+    .footer_container_content p {
+        margin: 20px 0 20px 0;
+        text-align: center;
+
+    }
+
+    .footer_img {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .main_wrapper {
+        padding: 42px 10px 42px 10px;
+    }
+
+    .footer_img {
+        display: none;
+    }
+
+    .footer_img_second {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header_wrapper {
+        padding: 30px 20px 30px 20px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        margin-right: -15px;
+    }
+
+    h2 {
+        font-size: 25px;
+        line-height: 130%;
+        text-align: center;
+    }
+    .pets{
+        justify-content: normal;
+    }
+    .pagination{
+        width: 100%;
+    }
+    .pagination button{
+        margin: 0 5px 0 5px;
+    }
+}
